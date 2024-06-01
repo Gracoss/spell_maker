@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 from tkinter import simpledialog
 import re
 
@@ -125,5 +126,3 @@ def save_grid(grid_states, grid_params, create_combat_area):
         file.write(f'spell:register()\n')
 
     print(f"All grids saved to {filename}")
-
-root = tk
