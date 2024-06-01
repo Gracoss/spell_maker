@@ -17,7 +17,7 @@ This Python script creates a graphical user interface (GUI) using Tkinter for se
 7. Click the "Save Grid" button to save the current grid configuration.
 8. The saved configurations will be written to `"spell_name".lua`.
 
-## `.txt` Format
+## `.lua` Format
 
 - **Spell Properties:** The user is prompted to enter the spell name, words, and ID via a dialog window.
 - **Grid Configurations:** Each grid configuration consists of a combat area defined by the toggled cells, along with associated effect and type parameters.
