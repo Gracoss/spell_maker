@@ -88,7 +88,8 @@ def save_grid(grid_states, grid_params, create_combat_area):
         file.write("\t\t\t\tdirEmitPos:sendDistanceEffect({x=dirEmitPos.x-dirList[i],y=dirEmitPos.y-dirList[i+1],z=dirEmitPos.z},dirList[1])\n")
         file.write("\t\t\t\ti = i + 2\n")
         file.write("\t\t\tend\n")    
-        file.write("\t\tend\n")    
+        file.write("\t\tend\n")
+        file.write("\tend\n")      
         file.write("end\n\n")    
 
         file.write("local spell = Spell(\"instant\")\n\n")
