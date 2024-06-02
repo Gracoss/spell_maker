@@ -62,7 +62,7 @@ def save_grid(grid_states, grid_params, create_combat_area):
         file.write(f"local offset = xxxx --This adds randomness to the formula. NO RNG = 1\n\n")
 
         for slider_value, grid in grid_states.items():
-            grid_name = f"combat{slider_value + 1}_Brush"
+            grid_name = f"Spell_part{slider_value + 1}"
             effect = grid_params[slider_value]["effect"]
             type_ = grid_params[slider_value]["type"]
             area_representation = create_combat_area(grid)
@@ -100,7 +100,7 @@ def save_grid(grid_states, grid_params, create_combat_area):
         num_combat_brushes = len(grid_states)
 
         for slider_value in range(num_combat_brushes, 0, -1):
-            grid_name = f"combat{slider_value}_Brush"
+            grid_name = f"Spell_part{slider_value}"
             if slider_value == num_combat_brushes:
                 file.write(f"\tRunPart({grid_name}, creatureId, var, startPos)\n")
             else:
